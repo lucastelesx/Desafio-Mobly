@@ -1,0 +1,23 @@
+{
+  "name": "mobly_test",
+  "version": "1.0.0",
+  "description": "Landing page",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
+  "author": "coelhodev <lucas_telles25@hotmial.com>",
+  "license": "ISC"
+}

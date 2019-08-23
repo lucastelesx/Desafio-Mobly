@@ -1,0 +1,13 @@
+.search-form{
+  display: flex;
+  .search-input{
+    width: 28ch;
+    border:0;
+    background-color: var(--bg-input);
+    padding-left: 15px;
+    margin-right: 1rem;
+    @extend %default-radius;
+    font-style: italic;
+    color: var(--c-black);
+  }
+}

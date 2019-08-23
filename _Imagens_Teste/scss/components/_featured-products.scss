@@ -1,0 +1,18 @@
+.featured-products{
+  background-color: var(--bg-dark);
+  .featured-wrapper{
+    @extend %container;
+    position: relative;
+    top: -130px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .featured-title{
+    display: flex;
+    flex: 1 100%;
+  }
+  .featured-item{
+    flex: 1 0 33.3%;
+  }
+}

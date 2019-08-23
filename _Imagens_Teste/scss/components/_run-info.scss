@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../font/ProximaNova-BoldIt.eot');
+    src: local('Proxima Nova Bold Italic'), local('../font/ProximaNova-BoldIt'),
+        url('../font/ProximaNova-BoldIt.eot?#iefix') format('embedded-opentype'),
+        url('../font/ProximaNova-BoldIt.woff2') format('woff2'),
+        url('../font/ProximaNova-BoldIt.woff') format('woff'),
+        url('../font/ProximaNova-BoldIt.svg#ProximaNova-BoldIt') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+:root{
+	font-size: 16px;
+}
+body{
+	font-family: 'Proxima Nova Rg';
+	color: var(--c-white, #ffffff);
+}
+.stadium{
+	max-width: 1200px;
+}
+.startingate{
+	display: flex;
+	> .grid-rows{
+		flex-grow: 1;
+	}
+	> .cup-title {
+		flex-basis: var(--fz-lg);
+		font-size: var(--fz-lg);
+		padding: 0.8rem;
+	}
+}
+.grid-rows{
+	display: grid;
+	grid-template-columns: repeat(
+		var(--numCompetitors, 2),60px
+	);
+	grid-gap:0 var(--gap);
+	padding-right: var(--gap);
+	direction: rtl;
+	/*counter-reset: section;  This is awesome but not acessible .-. */
+	.item{//change to competitor
+		display: grid;	
+		grid-template-columns:1fr;
+		grid-template-rows: var(--fz-lg) 60px 1fr;
+		grid-gap: var(--gap) 0px;
+		&:not(:nth-child(-n+4)){
+			background-color: var(--c-grey);
+			filter: grayscale(1);
+		}
+		&:nth-child(1) > *{
+			background-color: var(--c-pink);
+		}
+		&:nth-child(2) > *{
+			background-color: var(--c-green);
+		}
+		&:nth-child(3) > *{
+			background-color: var(--c-antique);
+		}
+		&:nth-child(4) > *{
+			background-color: var(--c-yellow);
+		}
+		.number{
+			font-size: 2rem;
+			text-align: center;
+			/* maybe use this ;-; &::before{
+				counter-increment: section;
+				content:counter(section);
+			} */
+		}
+		.competitor{//change to box or wrapper
+			>img{
+			max-width: 100%;
+			max-height: 100%;
+			margin: 0 auto;
+			display: block;
+			}
+		}
+		.name{
+			writing-mode: vertical-rl;
+			text-orientation: mixed;
+			padding: 0.3rem;
+			text-align: left;
+		}
+	}
+}
+.cup-title{
+	background-color: var(--c-black);
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+}

@@ -1,0 +1,28 @@
+//Settings
+  //helpers
+  @import '../settings/variables';
+  
+//Tools
+  @import '../tools/animations';
+  @import '../tools/util';
+
+//Generic
+@import '../generic/reset';
+
+//Base
+@import '../base/base';
+
+// Objects
+@import '../objects/buttons';
+@import '../objects/search';
+//componentes
+@import '../components/_header';
+@import '../components/_nav';
+@import '../components/_banner';
+@import '../components/featured-products';
+
+/* /Theme
+@import '../theme/theme'; */
+
+//trumps
+@import '../trumps/trumps';

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('ProximaNova-BoldIt.eot');
+    src: local('Proxima Nova Bold Italic'), local('ProximaNova-BoldIt'),
+        url('ProximaNova-BoldIt.eot?#iefix') format('embedded-opentype'),
+        url('ProximaNova-BoldIt.woff2') format('woff2'),
+        url('ProximaNova-BoldIt.woff') format('woff'),
+        url('ProximaNova-BoldIt.svg#ProximaNova-BoldIt') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+

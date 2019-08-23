@@ -1,0 +1,68 @@
+.banner-fullwidth{
+  background-image: url('/img/1. Destaque/20190523-Lancamentos-Desktop-1-Destaque.jpg');
+  height: 480px;
+  background-size: cover;
+  background-position: bottom;
+  background-position-x: 38%;
+  .banner-wrapper{
+    @extend %container;
+  }
+  .banner-title{
+    color:var(--c-navyblue) ;
+    padding: 2rem 0 1rem;
+    &.--lg{
+      font-size: 5rem;
+    }
+  }
+  .banner-text{
+    color: #9a9a9d;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+}
+.banner-featured{
+  >img{
+    width: 100%;
+    display: block;
+  }
+}
+.exclusive-products{
+  background-color: var(--bg-dark);
+  padding: 1.5rem 0;
+  .exclusive-wrapper{
+    @extend %container;
+    display: flex;  
+  }
+  .exclusive-item{
+    &:first-child{ 
+      flex-grow: 1;
+      padding-right: 2rem;
+    }
+    &:last-child{  flex-grow: 2;}
+  }
+}
+.specialNew-products{
+  background-color: var(--bg-dark);
+  padding: 1.5rem 0;
+  .specialNew-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 480px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .item{
+    &:nth-child(1) {height: 25%;}
+    &:nth-child(2) {height: 75%;}
+    &:nth-child(3) {height: 100%;}
+    &:nth-child(4) {height: 50%;}
+    &:nth-child(5) {height: 50%;}
+    >img{
+      width: 100%;
+      display: block;
+    }
+  }
+}
