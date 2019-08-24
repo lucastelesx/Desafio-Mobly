@@ -8,10 +8,12 @@
   <title>Mobly Test</title>
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/global.css">
+  <!-- Place your kit's code here -->
+  <script src="https://kit.fontawesome.com/bf7ee39ef7.js"></script>
 </head>
 <body>
-  <header class="header">
+  <header class="header"><div class="header-wrapper">
     <form class="search-form" action="">
       <input class="search-input" type="text" placeholder="Encontre sofás, mesas...">
       <button class="btn search" type="submit">Buscar</button>
@@ -19,23 +21,24 @@
     <div class="logo"><img src="data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNjUwLjAxcHgiIGhlaWdodD0iMTI2LjQ0M3B4IiB2aWV3Qm94PSIwIDAgNjUwLjAxIDEyNi40NDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDY1MC4wMSAxMjYuNDQzIg0KCSB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiNGRjQ2MDAiIGQ9Ik0yMzYuOTEyLDk3LjQ3NWMtMTguNDE0LDAtMzIuMzM3LTEzLjAyNS0zMi4zMzctMzMuNjg1YzAtMjAuNjYsMTQuMzcyLTM0LjEzNCwzMi41NjItMzQuMTM0DQoJCWMxOC40MTQsMCwzMi4zMzYsMTMuMjQ5LDMyLjMzNiwzMy42ODRDMjY5LjQ3Myw4NC4wMDEsMjU1LjMyNiw5Ny40NzUsMjM2LjkxMiw5Ny40NzUgTTM5My42NTYsNTIuMzM4DQoJCWMtNi45NjIsMi4yNDYtMTAuNTU1LDQuOTQtMTAuNTU1LDEwLjc3OWMwLDcuNjM1LDUuMTY1LDkuNjU2LDEyLjgwMSwxMS4wMDNjNi4yODcsMS4xMjMsMTYuMTY4LDIuOTIsMTYuMTY4LDEyLjgNCgkJYzAsOC4wODYtNy42MzUsMTEuMDA1LTE1LjI3MSwxMS4wMDVoLTQwLjQyMWMtMi4wMjEsMC0zLjM2OC0xLjM0OC0zLjM2OC0zLjM2OVYzMi41NzZjMC0yLjAyMSwxLjM0OC0zLjM2OCwzLjM2OC0zLjM2OGgzMy42ODUNCgkJYzguNTMzLDAsMTUuNDk1LDIuNjk1LDE1LjQ5NSwxMS4wMDRDNDA1LjU1OCw0Ny42MjIsMzk5LjQ5NCw1MC41NDEsMzkzLjY1Niw1Mi4zMzggTTMyMC44OTgsMTcuNTMxdjkyLjA3DQoJCWMwLDEwLjc3OSw2LjA2MywxNi44NDIsMTYuODQyLDE2Ljg0Mmg1OC44MzVjMjkuODY3LDAsNDYuOTM0LTEzLjI0OSw0Ni45MzQtMzUuOTNjMC0xMy45MjItNS44MzktMjMuODAzLTE4Ljg2My0zMC4wOTENCgkJYzguMzA5LTYuMjg4LDEyLjM1MS0xNS4wNDYsMTIuMzUxLTI1LjZjMC0yMS4zMzMtMTUuMjctMzQuMTMzLTQ0LjIzNy0zNC4xMzNIMzM3Ljc0QzMyNi45NiwwLjY4OSwzMjAuODk4LDYuNzUyLDMyMC44OTgsMTcuNTMxDQoJCSBNMTYuMzkzLDEyNy41NjZjOS42NTYsMCwxNi4zOTMtNi43MzcsMTYuMzkzLTE2LjYxOFY0My4zNTVsMzUuNDgsMjEuMTA5YzEuNTcyLDAuODk4LDQuMjY3LDIuNDcsOC4zMDksMi40Nw0KCQljMy41OTMsMCw2LjczNy0xLjc5Niw3Ljg2LTIuNDdsMzUuOTMtMjEuNTU5djY3LjM2OWMwLDEyLjEyNiw4LjA4NCwxNy4yOTEsMTYuMzkzLDE3LjI5MWM5LjY1NiwwLDE2LjM5My02Ljk2MSwxNi4zOTMtMTYuNjE4DQoJCVYxNi4xODNjMC0xMC43NzgtNi45NjItMTUuNzE5LTE1LjcyLTE1LjcxOWMtMi45MTksMC01LjYxNCwwLjY3NC04LjMwOCwyLjI0Nkw3OC44MjEsMzEuOTAzYy0xLjEyMywwLjY3My0xLjc5NywwLjY3My0yLjkyLDANCgkJbC01MS4yLTI4Ljk2OWMtMi42OTQtMS41NzEtNS4zODktMi40Ny04LjUzMy0yLjQ3QzcuNDEsMC40NjQsMCw1LjQwNSwwLDE2LjYzM3Y5My42NDJDMCwxMjEuMjc4LDYuOTYxLDEyNy41NjYsMTYuMzkzLDEyNy41NjYNCgkJIE02NDYuMjg3LDI2LjA2NGMyLjQ3Mi0zLjgxNywzLjU5NS03LjQxLDMuNTk1LTExLjAwM2MwLTQuNzE2LTIuMjQ2LTguNzU4LTYuMDY0LTExLjQ1M2MtMy4xNDUtMi4yNDUtNi41MTItMy4zNjgtOS42NTYtMy4zNjgNCgkJYy00LjkzOSwwLTkuNjU2LDIuNDctMTMuNDczLDcuNDFsLTM3LjA1Myw0OC43M2MtNi43MzcsOC45ODMtMTEuNDUzLDE2LjYxOC0xMS40NTMsMjguNzQ0djI1LjE1MQ0KCQljMCwxMi4xMjYsOC4wODQsMTcuMjkxLDE2LjM5MywxNy4yOTFjOS42NTYsMCwxNi42MTgtNi45NjEsMTYuNjE4LTE2LjYxOFY4Mi44NzhjMC0xLjc5NywwLjQ0OS0zLjE0NSwxLjU3Mi00LjcxN0w2NDYuMjg3LDI2LjA2NHoNCgkJIE01NTkuMzgxLDcuNjVsMTcuNTE3LDIyLjkwNWMzLjE0NCw0LjA0Myw0LjI2Nyw3Ljg2LDQuMjY3LDExLjIyOWMwLDQuNDkxLTIuNDcxLDguNTMzLTYuMjg4LDExLjQ1Mg0KCQljLTIuOTE5LDIuMjQ2LTYuMjg4LDMuNTkzLTkuMjA3LDMuNTkzYy00LjcxNiwwLTkuMjA3LTIuNjk1LTEzLjI0OS03LjYzNWwtMTguNDE0LTIyLjQ1NmMtMi45Mi0zLjU5My00LjI2Ny03LjE4Ni00LjI2Ny0xMC43NzkNCgkJYzAtNC40OTEsMi40Ny04Ljk4Miw2LjA2My0xMS45MDJjMi45Mi0yLjQ3LDYuNTEzLTMuODE3LDkuODgxLTMuODE3QzU1MC42MjQsMC4yNCw1NTUuNTY1LDIuNzEsNTU5LjM4MSw3LjY1IE01NDAuNTE5LDk1LjIyOQ0KCQloLTQ1LjgxMWMtMi4wMjEsMC0zLjM2OC0xLjM0Ny0zLjM2OC0zLjM2OFYxNy4zMDZjMC0xMi4xMjYtOC4wODQtMTcuMjkxLTE2LjM5NC0xNy4yOTFjLTkuNjU2LDAtMTYuNjE3LDYuOTYyLTE2LjYxNywxNi42MTgNCgkJdjkyLjk2OGMwLDEwLjc3OSw2LjA2MywxNi44NDIsMTYuODQyLDE2Ljg0Mmg2NC42NzRjMTIuMTI3LDAsMTcuMjkyLTcuMTg2LDE3LjI5Mi0xNS40OTUNCgkJQzU1Ny4xMzcsMTAxLjI5Miw1NTAuMTc0LDk1LjIyOSw1NDAuNTE5LDk1LjIyOSBNMjM2LjkxMiwxMjcuNTY2YzM3LjI3NywwLDY2LjI0Ni0yNy44NDYsNjYuMjQ2LTY0LjIyNQ0KCQljMC0zNi42MDMtMjguMjk1LTYzLjc3NS02NS43OTctNjMuNzc1Yy0zNy4yNzcsMC02Ni40NywyNy44NDYtNjYuNDcsNjQuNDQ5QzE3MC44OTEsMTAwLjYxOSwxOTkuNDEsMTI3LjU2NiwyMzYuOTEyLDEyNy41NjYiLz4NCjwvZz4NCjwvc3ZnPg0K" width="120" alt="Mobly | Sua loja de móveis e artigos de decoração"></div>
     <nav class="nav-wrapper top"><ul class="nav-box">
       <li class="nav-item"><a href="#!">
-        <i class="nav-icon"></i>
+        <i class="nav-icon fas fa-phone-alt fa-lg"></i>
         <div class="nav-txt">Atendimento</div>
       </a></li>
       <li class="nav-item"><a href="#!">
-        <i class="nav-icon "></i>
-        <div class="text-menu">Minha Conta</div>
+        <i class="nav-icon fas fa-user fa-lg"></i>
+        <div class="nav-txt">Minha Conta</div>
       </a></li>
       <li class="nav-item"><a href="#!">
-        <i class="nav-icon icon"></i>
-        <div class="text-menu">Favoritos</div>
+        <i class="nav-icon fas fa-heart fa-lg"></i>
+        <div class="nav-txt">Favoritos</div>
       </a></li>
       <li class="nav-item cart"><a href="#!">
-        <i class="icon"></i>
+        <i class="fas fa-shopping-cart"></i>
         <span class="cart-num">7</span>
+        <i class="fas fa-angle-down"></i>
       </a></li>
     </ul></nav>
-  </header>
+  </div></header>
   <nav class="nav-wrapper bottom"><ul class="nav-box">
     <li class="nav-item has-submenu"><a href="#!">
       Por ambiente

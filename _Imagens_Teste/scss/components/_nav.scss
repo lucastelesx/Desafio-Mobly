@@ -16,6 +16,27 @@
 //mav variations
 .nav-wrapper{
   &.top{
+    .nav-item > a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .nav-icon {
+          margin-bottom: 5px;
+        }
+        .nav-txt{ color: var(--c-black); }
+    }
+    .cart{
+      background-color: var(--c-purple);
+      position: relative;
+      width: 60px;
+      @extend %default-radius;
+      > a{
+        flex-direction: row;
+        color: #fff;
+        justify-content: space-between;
+        height: 100%;
+      }
+    }
   }
   &.bottom{
     @extend %container;
@@ -42,8 +63,8 @@
       color: var(--c-orange);
       font-size: 1rem;
       position: absolute;
-      width: 10px;
-      height: 4px;
+      width: 9px;
+      height: 3px;
       border-radius: 35px;
       background-color: firebrick;
       top: 50%;
