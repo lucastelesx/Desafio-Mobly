@@ -1,12 +1,7 @@
 var gulp = require('gulp'),
-    concat 	= require('gulp-concat'),
     autoprefixer    = require('gulp-autoprefixer'),
     sass = require('gulp-sass');
-
-//task para o sass
-
-//TODO: CSS tema CONCAT AND MINIFY????
-//TODO: Adicionar all SCSS to compile on Watch
+    
 var paths = {
   styleSrcMain: {
     src: 'scss/main/global.scss',
